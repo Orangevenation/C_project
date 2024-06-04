@@ -1,0 +1,29 @@
+//文件的随机读写
+//fseek
+//int main()
+//{
+//	FILE* pf = fopen("fseektest.txt", "r");
+//	if (pf == NULL)
+//	{
+//		perror("fopen");
+//		return 3820;
+//	}
+//	int i = fgetc(pf);
+//	printf("%c\n", i);
+//	fseek(pf, 2, SEEK_CUR);//从当前位置处跳过两个字节
+//	i = fgetc(pf);
+//	printf("%c\n", i);
+//	fseek(pf, 0, SEEK_END);//从末尾位置向前跳过一个字节（\0也被计算在内）
+//	i = fgetc(pf);
+//	printf("%c\n", i);
+//	int ret = ftell(pf);//ftell返回当前文件指针距离起始位置的偏移量
+//	i = fgetc(pf);
+//	printf("%d\n", ret);
+//	rewind(pf);//让文件指针回到起始位置
+//	i = fgetc(pf);
+//	printf("%c\n", i);
+//
+//	fclose(pf);
+//	pf = NULL;
+//	return 0;
+//}
